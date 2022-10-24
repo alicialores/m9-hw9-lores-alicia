@@ -131,3 +131,45 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > a.logo {
+    margin: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  nav > a:not(:first-of-type){
+    margin-bottom: 0.5rem;
+  }
+
+  main > article {
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  main > article img {
+    display: block;
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main > section {
+    margin-bottom: 20px;
+  }
+  
+  section.hero > .call-to-action  {
+    font-size: 1.5rem;
+  }
+}
